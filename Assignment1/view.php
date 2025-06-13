@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" >
   <link rel="stylesheet" href="./css/style.css">
 	<!-- Latest compiled and minified JavaScript -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +45,7 @@
               </tr>
             </thead>
             <?php
-            foreach ($result as $kay => $res) {
+            foreach ($result as $key => $res) {
                 echo "<tr>";
                     echo "<td>" . $res['name'] . "</td>";
                     echo "<td>" . $res['count'] . "</td>";
@@ -54,7 +55,7 @@
                     echo "<td>" . $res['milk_option'] . "</td>";
                     echo "<td>" . $res['sweeteners'] . "</td>";
                     echo "<td>" . $res['flavored_syrups'] . "</td>";
-                echo "<tr>";
+                echo "</tr>";
             }
             ?>
 
