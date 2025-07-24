@@ -1,0 +1,184 @@
+:root { 
+    --primary-color: #5C6BC0;
+    --secondary-color: #FFB74D;
+    --background: rgba(241, 243, 242, 0.53);
+}
+
+a, h1, tr, th, h3, p, h2 {
+    color: var(--secondary-color) !important;
+    text-shadow: 1px 1px 18px var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, a, li, figcaption, th, td, label, input {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+/********* Index Page **********/
+
+.index .container {
+    display: grid;
+    margin-bottom: 3em;
+    border-radius: 20px;
+    width: 50%;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "header header header"
+    "buttons buttons buttons";
+}
+
+.index .login_text {
+    text-align: center;
+    grid-area: header;
+    height: 100%;
+    align-content: center;
+    border-radius: 20px;
+    background-color: var(--background);
+}
+
+.index .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "right lift";
+    grid-area: buttons;
+}
+
+.index .register-btn, .index .login-btn {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    padding: 0.8em;
+    border-radius: 20px;
+    box-shadow: 1px 1px 18px var(--secondary-color);
+}
+
+.index .register-btn {
+    grid-area: lift;
+
+}
+
+.index .login-btn {
+    grid-area: right;
+}
+
+/********* Login Page **********/
+
+.login .container {
+    display: flex;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_form {
+    background-color: var(--background);
+    padding: 3.0em;
+    border-radius: 10px;
+}
+
+/********* Register Page **********/
+
+.lesson-masthead {
+    text-align: center;
+}
+
+.register_form{
+    background-color: var(--background);
+    padding: 3.0em;
+    border-radius: 10px;
+}
+
+/********* Dashboard Page **********/
+
+.dashboard .container {
+    display: block;
+}
+
+.dashboard .userList {
+    background-color: var(--background);
+    padding: 1.8em;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .masthead div h1 {
+        font-size: 2.5em;
+        padding: 0 1rem;
+    }
+
+    .form-row h2 {
+        font-size: 1.8em;
+    }
+
+    form {
+        padding: 1rem;
+    }
+}
+
+.form-row {
+    padding: 5%;
+}
+
+.form-row h2 {
+    font-size: 2.5em;
+}
+
+.form-row .form-group {
+    margin: 15px 0px;
+}
+
+.submit-message {
+    text-align: center;
+}
+
+/********* View Orders Page **********/
+
+/********* Header **********/
+
+header {
+    margin-bottom: 3.2rem;
+}
+
+nav {
+    box-shadow: 1px 1px 18px var(--primary-color);
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: auto;
+}
+
+/********* Footer **********/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 18px var(--primary-color);
+    padding: 1.8rem;
+}
