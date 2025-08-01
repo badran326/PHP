@@ -43,29 +43,7 @@
                 </div>
             </section>
         <?php endforeach; ?>
-      <!--<section class="userList">
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Username</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php /* foreach ($users as $u): ?>
-              <tr>
-                <td><?= $u['user_id'] ?></td>
-                <td><?= htmlspecialchars($u['username']) ?></td>
-                <td>
-                  <a class="btn btn-sm btn-primary" href="update.php?id=<?= $u['user_id'] ?>">Edit</a>
-                  <a class="btn btn-sm btn-danger" href="delete.php?id=<?= $u['user_id'] ?>" onclick="return confirm('Are you sure?')">Delete</a>
-                </td>
-              </tr>
-            <?php endforeach; */?>
-          </tbody>
-        </table>
-      </section> -->
     </div>
 </main>
+
 <?php require './templates/footer.php'; ?>
