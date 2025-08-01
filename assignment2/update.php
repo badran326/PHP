@@ -41,8 +41,8 @@
 <main class="review">
     <div class="container">
         <!-- the add.php will execute our CREATE function -->
-        <form method="POST" enctype="multipart/form-data"  action="update.php" class="review-form">
-            <!-- I am using the wrong input types so that we can test our php validation with no road blocks -->
+        <form method="POST" enctype="multipart/form-data"  action="update.php?id=<?= $id ?>" class="review-form">
+        <!-- I am using the wrong input types so that we can test our php validation with no road blocks -->
             <div class="coffee-shop">
                 <label>Coffee Shop Name:
                     <input type="text" value="<?= $found['name'] ?>" name="name" placeholder="Coffee Shop Name">
