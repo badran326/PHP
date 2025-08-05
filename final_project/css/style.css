@@ -1,0 +1,399 @@
+:root { 
+    --primary-color: #5C6BC0;
+    --secondary-color: #FFB74D;
+    --background: rgba(241, 243, 242, 0.53);
+}
+
+a, h1, tr, th, h3, p, h2, label {
+    color: var(--secondary-color) !important;
+    text-shadow: 1px 1px 18px var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color) !important;
+    text-shadow: 1px 1px 18px var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+p, a, li, figcaption, th, td, label, input {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+/********* Index Page **********/
+
+.index .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6em;
+}
+
+.index .login_text {
+    text-align: center;
+}
+
+.index .login_text h4 {
+    font-size: 1rem;
+}
+
+.index .me {
+    box-shadow: 1px 1px 18px var(--secondary-color);
+}
+
+/********* Login Page **********/
+
+
+/********* Register Page **********/
+
+.lesson-masthead {
+    text-align: center;
+}
+
+.register_form{
+    background-color: var(--background);
+    padding: 3.0em;
+    border-radius: 10px;
+}
+
+.register .errorMessageRow ul li {
+    font-size: 0.8rem;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+
+.register .errorMessageRow ul{
+    padding: 0;
+    margin: 0;
+}
+
+/********* Dashboard Page **********/
+
+.dashboard .container {
+    flex-direction: column;
+}
+
+#errorMessageRow {
+    color: red !important;
+}
+
+.dashboard .hero {
+    display: flex;
+    padding: 0.8em 1.6em;
+    grid-area: hero;
+    align-items: center;
+    gap: 1.5em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px var(--background);
+}
+
+.dashboard .hero .hero-img {
+    width: 15%;
+}
+
+.dashboard .hero .hero-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.dashboard .hero .hero-name p {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.dashboard .review-post {
+    display: grid;
+    width: 50%;
+    height: fit-content;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+            "hero hero hero hero"
+            "details details post post"
+            "review review review review"
+            "btn btn btn btn";
+    justify-items: center;
+    background-color: var(--primary-color);
+    padding: 1.8em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px var(--secondary-color);
+    gap: 1.5em;
+    margin-bottom: 1.8em;
+}
+
+.dashboard .review-img img {
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+}
+
+.dashboard .review-img {
+    width: 100%;
+    height: auto;
+    grid-area: post;
+}
+
+.dashboard .review-details {
+    grid-area: details;
+}
+
+.dashboard .review-text {
+    grid-area: review;
+}
+
+.dashboard .review-btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    grid-area: btn;
+}
+
+.users .container {
+    flex-direction: column;
+}
+
+.users .userList {
+    width: 70%;
+    background-color: var(--background);
+    padding: 1.8em;
+    border-radius: 10px;
+}
+
+.users .userList .table tbody .user .img {
+    width: 10%;
+}
+
+.users .userList .table tbody .user .img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/********* Review Page **********/
+
+.review .review-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    width: fit-content;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5em;
+    background-color: var(--background);
+    padding: 3.0em;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    margin-bottom: 3em;
+}
+
+.review .coffee-shop {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.review .coffee-shop input {
+    display: block;
+}
+
+.review .coffee-titles {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.review .checkboxes {
+    display: flex;
+    align-items: center;
+    gap: 1.6em;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.review .size {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.review .coffee-sweeteners {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.review .coffee-flavored {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.review .coffee-img {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.review .coffee-review {
+    width: 70%;
+    height: 70%;
+    grid-column: 1/3;
+    grid-row: 5/7;
+}
+
+.review .coffee-review label {
+    width: 100%;
+    height: 100%;
+}
+.review .coffee-review label textarea {
+    width: 100%;
+    height: 90%;
+}
+
+.review button {
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+.review input {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .masthead div h1 {
+        font-size: 2.5em;
+        padding: 0 1rem;
+    }
+
+    .form-row h2 {
+        font-size: 1.8em;
+    }
+
+    form {
+        padding: 1rem;
+    }
+}
+
+.form-row {
+    padding: 5%;
+}
+
+.form-row h2 {
+    font-size: 2.5em;
+}
+
+.form-row .form-group {
+    margin: 15px 0px;
+}
+
+.submit-message {
+    text-align: center;
+}
+
+/********* View Orders Page **********/
+
+/********* Header **********/
+
+header {
+    margin-bottom: 3.2rem;
+}
+
+nav {
+    box-shadow: 1px 1px 18px var(--primary-color);
+}
+.header .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 0;
+}
+
+.navbar-brand {
+    grid-column: 1/2;
+}
+
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+}
+
+.header .nav-creat{
+    grid-column: 2/3;
+}
+
+.header .nav-creat a {
+    padding: 0.4em;
+}
+
+.header .login_form {
+    display: flex;
+    width: fit-content;
+    grid-column: 4/ 5;
+    gap: 1.5em;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: .6rem;
+}
+
+.header .errorMessageRow {
+    grid-column: 3/4;
+}
+
+.header .login_form .email, .password {
+    width: 20%;
+    height: auto;
+}
+
+.header .login_form input {
+    padding: 0;
+}
+
+.header .login_form button, a {
+    height: fit-content;
+}
+
+/*********Logged in Header **********/
+
+.logged_header .container-fluid {
+    justify-content: space-around ;
+}
+
+.logged_header .nav-item {
+    margin: 0 1.8em;
+}
+
+.logged_header .profile {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/********* Footer **********/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 18px var(--primary-color);
+    padding: 1.8rem;
+}
